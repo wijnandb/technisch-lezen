@@ -231,7 +231,7 @@ function checkAnswer(guess) {
 	}
 
 
-	if (trimmedGuess.indexOf('skip') >= 0 || trimmedGuess.indexOf(answer) >= 0) {
+	if (trimmedGuess.indexOf('stop') >= 0 || trimmedGuess.indexOf(answer) >= 0) {
 		showNextProblem();
 	}
 

@@ -30,31 +30,23 @@ var common = {
 			categories = [
 				{
 					name: 'builtin-addition',
-					displayName: 'Addition'
+					displayName: 'Optellen'
 				},
 				{
 					name: 'builtin-subtraction',
-					displayName: 'Subtraction'
+					displayName: 'Aftrekken'
 				},
 				{
 					name: 'builtin-multiplication',
-					displayName: 'Multiplication'
+					displayName: 'Tafels oefenen'
 				},
 				{
 					name: 'builtin-division',
-					displayName: 'Division'
+					displayName: 'Delen'
 				},
 				{
 					name: 'builtin-capitals',
-					displayName: 'US State Capitals'
-				},
-				{
-					name: 'builtin-chemSymbols',
-					displayName: 'Chemical Symbols'
-				},
-				{
-					name: 'builtin-spanish',
-					displayName: 'Spanish Vocabulary'
+					displayName: 'Nederlandse woordjes'
 				}
 			];
 		}
