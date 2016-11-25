@@ -46,7 +46,7 @@ var common = {
 				},
 				{
 					name: 'builtin-capitals',
-					displayName: 'Nederlandse woordjes'
+					displayName: 'Nederlandse zinnetjes'
 				}
 			];
 		}
