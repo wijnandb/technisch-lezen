@@ -1,12 +1,12 @@
 {var samples = {
 	capitals: [
-		{key: 'We zijn met het vliegtuig naar Amerika (vliegen).', value: 'We zijn met het vliegtuig naar Amerika gevlogen.'},
-		{key: 'Laten we samen naar school (lopen).', value: 'Laten we samen naar school lopen.'},
-		{key: 'Gisteren heb ik lang (slapen).', value: 'Gisteren heb ik lang geslapen.'},
-		{key: 'Heb jij hem (slaan)?', value: 'Heb jij hem geslagen?'},
-		{key: 'Ik heb dit spelletje zelf (maken)', value: 'Ik heb dit spelletje zelf gemaakt'},
-		{key: 'Hij (programmeren) al toen hij nog maar 6 jaar was.', value: 'Hij programmeerde al toen hij nog maar 6 jaar was.'}
-    		],
+	{key:'We zijn met het vliegtuig naar Amerika (vliegen).', value: 'We zijn met het vliegtuig naar Amerika gevlogen.'},
+	{key:'Laten we samen naar school (lopen).', value: 'Laten we samen naar school lopen.'},
+	{key:'Gisteren heb ik lang (slapen).', value: 'Gisteren heb ik lang geslapen.'},
+	{key:'Heb jij hem (slaan)?', value: 'Heb jij hem geslagen?'},
+	{key:'Ik heb dit spelletje zelf (maken)', value: 'Ik heb dit spelletje zelf gemaakt'},
+	{key:'Hij (programmeren) al toen hij nog maar 6 jaar was.', value: 'Hij programmeerde al toen hij nog maar 6 jaar was.'}
+	],
 
 	chemSymbols: [
 		{key:'Ac', value: 'Actinium'},
