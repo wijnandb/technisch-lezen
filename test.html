@@ -10,7 +10,7 @@
 // startup code
 var numberA = getRandomNumber();
 var numberB = getRandomNumber();
-var text = 'Hoeveel is ' + numberA + ' x ' + numberB + '?';
+var text = 'Hoeveel is ' + numberA + ' keer ' + numberB + '?';
 var response;
 
 speechSynthesis.cancel();
@@ -47,8 +47,9 @@ function ask(text, callback) {
     speak(text, function () {
         // get answer
         var recognition = new webkitSpeechRecognition();
+        recognition.lang = "nl-NL";
         recognition.continuous = false;
-        recognition.interimResults = false;
+        recognition.interimResults = true;
 
         recognition.onend = function (e) {
             if (callback) {
