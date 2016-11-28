@@ -1,16 +1,16 @@
 <html>
 <head>
-    <title>Math Quiz</title>
+    <title>Tafels oefenen</title>
 </head>
 <body>
 
     <output id="result"></output>
-    <a href="test.html">Ask Question</a>
+    <a href="test.html">Nieuwe som</a>
 <script type='text/javascript'>
 // startup code
 var numberA = getRandomNumber();
 var numberB = getRandomNumber();
-var text = 'What is ' + numberA + ' + ' + numberB + '?';
+var text = 'Hoeveel is ' + numberA + ' x ' + numberB + '?';
 var response;
 
 speechSynthesis.cancel();
@@ -19,17 +19,17 @@ var objSpeak = new SpeechSynthesisUtterance();
 // ask the problem
 ask(text, function (err, result) {
     if (err) {
-        document.getElementById('result').innerHTML = 'No Answer.';
+        document.getElementById('result').innerHTML = 'Geen antwoord.';
     } else {
         var answer = parseInt(result.transcript);
-       console.log('results:' + numberA + ' - ' + numberB + ' - ' + answer + ' - ' + result.transcript);
-        if (answer == numberA + numberB) {
-            response = 'Right! ' + numberA + ' + ' + numberB + ' is ' + answer + '.';
-            speak(response);
+       console.log('resultaat:' + numberA + ' - ' + numberB + ' - ' + answer + ' - ' + result.transcript);
+        if (answer == numberA * numberB) {
+            response = 'Goed! ' + numberA + ' x ' + numberB + ' is ' + answer + '.';
+//            speak(response);
             document.getElementById('result').innerHTML = response;
         } else {
-            response = 'Wrong! ' + numberA + ' + ' + numberB + ' is not ' + answer + '.';
-            speak(response);
+            response = 'Fout! ' + numberA + ' x ' + numberB + ' is niet ' + answer + ' maar ' + response + '.';
+//            speak(response);
             document.getElementById('result').innerHTML = response;
         }
     }
@@ -75,7 +75,7 @@ function ask(text, callback) {
 // say a message
 function speak(text, callback) {
     objSpeak.text = text;
-    objSpeak.lang = 'en-US';
+    objSpeak.lang = 'nl-NL';
 
     objSpeak.onstart = function (e) {
     };
