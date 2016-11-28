@@ -4,13 +4,15 @@
 </head>
 <body>
 
-    <output id="result"></output>
-    <a href="test.html">Nieuwe som</a>
+    <p id="demo"> 
+    <output id="result"></output></p>
+
 <script type='text/javascript'>
 // startup code
 var numberA = getRandomNumber();
 var numberB = getRandomNumber();
 var text = 'Hoeveel is ' + numberA + ' keer ' + numberB + '?';
+document.getElementById('demo').innerHTML = text;    
 var response;
 
 speechSynthesis.cancel();
@@ -53,7 +55,7 @@ function ask(text, callback) {
 
         recognition.onend = function (e) {
             if (callback) {
-                callback('no results');
+                callback('geen resultaten');
             }
         };
 
@@ -95,5 +97,6 @@ function speak(text, callback) {
     speechSynthesis.speak(objSpeak);
 }
 </script>
+    
 </body>
 </html>
