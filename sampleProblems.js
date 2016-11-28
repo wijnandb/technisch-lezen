@@ -10,7 +10,13 @@ var samples = {
 		{key: 'Kippen en eenden [leggen].......... witte eieren.', value: 'leggen'},
 		{key: 'De leerling[knippen].......... lange zinnen.', value: 'knipt'},
 		{key: 'De koeien [geven].......... verse melk.', value: 'geven'},
-		{key: '[Eten].......... rupsen alleen groene blaadjes?', value: 'Eten'}
+		{key: '[Eten].......... rupsen alleen groene blaadjes?', value: 'Eten'},
+		{key: 'De ijverige schilder [schuren].......... en [verven].......... de lelijke deur.', value: 'schuurt verft'},
+		{key: 'De meester en de juf [geven].......... leuke lesjes.', value: 'geven'},
+		{key: 'De hongerige eekhoorn [verstoppen].......... lekkere beukennootjes.', value: 'verstopt'},
+		{key: 'De lieve leesmoeder [geven].......... Marieke een lange leesbeurt.', value: 'geeft'},
+		{key: 'De postbode [brengen].......... ons een dikke brief.', value: 'brengt'},
+		{key: 'Het leergierige kind [vragen].......... de meester een belangrijk lesje.', value: 'vraagt'}
 	],
 
 	chemSymbols: [
