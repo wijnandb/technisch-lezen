@@ -10,33 +10,35 @@
 
 <script type='text/javascript'>
 // startup code
-var numberA = getRandomNumber();
-var numberB = getRandomNumber();
-var text = 'Hoeveel is ' + numberA + ' keer ' + numberB + '?';
-document.getElementById('vraag').innerHTML = text;    
-var response;
+for (i = 0; i < 5; i++) {
+    var numberA = getRandomNumber();
+    var numberB = getRandomNumber();
+    var text = 'Hoeveel is ' + numberA + ' keer ' + numberB + '?';
+    document.getElementById('vraag').innerHTML = text;    
+    var response;
 
-speechSynthesis.cancel();
-var objSpeak = new SpeechSynthesisUtterance();
+    speechSynthesis.cancel();
+    var objSpeak = new SpeechSynthesisUtterance();
 
-// ask the problem
-ask(text, function (err, result) {
-    if (err) {
-        document.getElementById('result').innerHTML = 'Geen antwoord.';
-    } else {
-        var answer = parseInt(result.transcript);
-       console.log('resultaat:' + numberA + ' - ' + numberB + ' - ' + answer + ' - ' + result.transcript);
-        if (answer == numberA * numberB) {
-            response = 'Goed! ' + numberA + ' x ' + numberB + ' is ' + answer + '.';
-//            speak(response);
-            document.getElementById('result').innerHTML = response;
+    // ask the problem
+    ask(text, function (err, result) {
+        if (err) {
+            document.getElementById('result').innerHTML = 'Geen antwoord.';
         } else {
-            response = 'Fout! ' + numberA + ' x ' + numberB + ' is niet ' + answer + ' maar ' + numberA * numberB + '.';
-//            speak(response);
-            document.getElementById('result').innerHTML = response;
+            var answer = parseInt(result.transcript);
+           console.log('resultaat:' + numberA + ' - ' + numberB + ' - ' + answer + ' - ' + result.transcript);
+            if (answer == numberA * numberB) {
+                response = 'Goed! ' + numberA + ' x ' + numberB + ' is ' + answer + '.';
+    //            speak(response);
+                document.getElementById('result').innerHTML = response;
+            } else {
+                response = 'Fout! ' + numberA + ' x ' + numberB + ' is niet ' + answer + ' maar ' + numberA * numberB + '.';
+    //            speak(response);
+                document.getElementById('result').innerHTML = response;
+            }
         }
-    }
-})
+    })
+}
 
 // get random number between 1 - 10
 function getRandomNumber() {
