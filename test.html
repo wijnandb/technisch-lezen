@@ -4,7 +4,7 @@
 </head>
 <body>
 
-    <div id="demo">
+    <div id="vragen"><output id="vraag"></output>
     <output id="result"></output>
         </div>
 
@@ -13,7 +13,7 @@
 var numberA = getRandomNumber();
 var numberB = getRandomNumber();
 var text = 'Hoeveel is ' + numberA + ' keer ' + numberB + '?';
-document.getElementById('demo').innerHTML = text;    
+document.getElementById('vraag').innerHTML = text;    
 var response;
 
 speechSynthesis.cancel();
