@@ -7,7 +7,21 @@
     <div id="vragen"><output id="vraag"></output>
     <output id="result"></output>
         </div>
-
+<!-- Firebase https://console.firebase.google.com -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDmErQOvA7XD7_Jf9PjvXqCbWlQZ7xmSNs",
+    authDomain: "tafels-oefenen.firebaseapp.com",
+    databaseURL: "https://tafels-oefenen.firebaseio.com",
+    storageBucket: "tafels-oefenen.appspot.com",
+    messagingSenderId: "564083258381"
+  };
+  firebase.initializeApp(config);
+</script>
+<!-- end Firebase hosting -->
+    
 <script type='text/javascript'>
 // startup code
 for (i = 0; i < 5; i++) {
